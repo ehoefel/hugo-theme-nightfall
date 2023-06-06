@@ -5,6 +5,7 @@
             {{ if isset . "icon" }}
                 <a href="{{ .url | safeURL }}" aria-hidden="true" title="{{ .name }}">
                     <i class="{{ .icon }}"></i>
+                    {{ .name }}
                 </a>
             {{ else }}
                 <a href="{{ .url | safeURL }}">{{ .name }}</a>

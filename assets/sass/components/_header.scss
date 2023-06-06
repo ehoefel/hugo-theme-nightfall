@@ -27,10 +27,20 @@
     li {
       display: inline;
       margin: 5px;
+
       a {
         color: $white;
-        text-decoration: none;
+        text-shadow: $black 0px 0px 2px;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        margin: 10px;
+        transition: .1s ease-in;
       }
+
+      a:hover {
+        color: $grey;
+      }
+
     }
   }
 }
