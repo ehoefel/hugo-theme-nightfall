@@ -26,7 +26,14 @@
             {{ end }}
             {{ if .Site.Params.readingTime | default true }}
                 <dt>reading time</dt>
-                <dd>{{ math.Round (div (countwords .Content) 220.0) }} minutes</dd>
+                <dd>{{ .ReadingTime }}
+                {{ if eq .ReadingTime 1 }}
+                  minute
+                {{ else }}
+                  minutes
+                {{ end }}
+
+                </dd>
             {{ end }}
         </dl>
     </section>
