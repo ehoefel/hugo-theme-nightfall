@@ -5,10 +5,10 @@
 
 <!-- Permalink & RSSlink -->
 <link rel="canonical" href="{{ .Permalink }}" >
+  <script defer src="{{ $.Site.BaseURL }}fontawesome/js/brands.js"></script>
+  <script defer src="{{ $.Site.BaseURL }}fontawesome/js/solid.js"></script>
+  <script defer src="{{ $.Site.BaseURL }}fontawesome/js/fontawesome.js"></script>
 {{- with .OutputFormats.Get "RSS" }}
-  <script defer src="/fontawesome/js/brands.js"></script>
-  <script defer src="/fontawesome/js/solid.js"></script>
-  <script defer src="/fontawesome/js/fontawesome.js"></script>
   <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" >
   <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" >
   <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" >
